@@ -37,7 +37,7 @@ jobs:
             echo "--- DÉMARRAGE DU SCRIPT JS ---"
             # Lancement via xvfb pour la gestion de l'affichage virtuel
             # timeout 5h40 pour laisser le temps au YAML de se relancer proprement
-            timeout 340m xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" node scrypt7a.js || echo "Cycle terminé ou timeout atteint"
+            timeout 340m xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" node scrypt8a.js || echo "Cycle terminé ou timeout atteint"
             echo "--- REPOS ET PURGE RAM (30 SECONDES) ---"
             sleep 30
           done
